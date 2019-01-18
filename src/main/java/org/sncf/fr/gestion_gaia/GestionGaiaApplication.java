@@ -26,6 +26,7 @@ public class GestionGaiaApplication {
                 String uri = parts[1];
                 car.setName(name);
                 car.setUrl(uri);
+                car.setNote("Note_Here");
                 carRepository.save(car);
             });          
             carRepository.findAll().forEach(System.out::println);

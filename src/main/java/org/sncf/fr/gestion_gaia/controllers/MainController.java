@@ -17,7 +17,7 @@ class MainController {
         this.carRepository = carRepository;
     }
 
-    @GetMapping("/cool-cars")
+    @GetMapping("/cool-sites")
     @CrossOrigin(origins = "http://localhost:4200")
     public Collection<Car> coolCars() {
         return carRepository.findAll().stream()

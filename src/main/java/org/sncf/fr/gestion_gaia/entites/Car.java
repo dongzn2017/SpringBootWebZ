@@ -14,6 +14,7 @@ public class Car {
     private Long id;
     private @NonNull String name;
     private @NonNull String url;
+    private @NonNull String note;
 	public Long getId() {
 		return id;
 	}
@@ -31,6 +32,12 @@ public class Car {
 	}
 	public void setUrl(String url) {
 		this.url = url;
+	}
+	public String getNote() {
+		return note;
+	}
+	public void setNote(String note) {
+		this.note = note;
 	}
 	@Override
 	public String toString() {
